@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_cancion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="#F8F8F8"
+            android:foreground="@drawable/mr_media_play_light"
+            android:tint="#03DAC5"
+            app:tintMode="add"
+            tools:srcCompat="@drawable/ic_media_play_light" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_weight="1"
+            android:text="Musica - Artista"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</LinearLayout>
